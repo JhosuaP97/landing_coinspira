@@ -1,6 +1,8 @@
 import { createGlobalStyle } from "styled-components";
-import OxygenBold from "Fonts/Oxygen-Bold.ttf";
-import OxygenRegular from "Fonts/Oxygen-Regular.ttf";
+import OpenSansBold from "fonts/OpenSans-Bold.ttf";
+import OpenSansRegular from "fonts/OpenSans-Regular.ttf";
+import OswaldBold from "fonts/Oswald-Bold.ttf";
+import OswaldRegular from "fonts/Oswald-Regular.ttf";
 
 export const fonts = {
   base: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif",
@@ -15,14 +17,27 @@ export const Colors = {
 };
 export const GlobalStyles = createGlobalStyle`
 @font-face {
-  font-family: "Oxygen";
-  src: url(${OxygenBold}) format("truetype");
+  font-family: "OpenSans";
+  src: url(${OpenSansBold}) format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
-  font-family: "Oxygen";
-  src: url(${OxygenRegular}) format("truetype");
+  font-family: "OpenSans";
+  src: url(${OpenSansRegular}) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url(${OswaldBold}) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Oswald";
+  src: url(${OswaldRegular}) format("truetype");
   font-weight: 400;
   font-style: normal;
 }
