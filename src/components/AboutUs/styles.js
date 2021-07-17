@@ -25,7 +25,6 @@ export const AboutInfo = styled.section`
 `;
 
 export const AboutHeader = styled.header`
-  max-width: 400px;
   margin: 2rem;
   width: 100%;
 `;
@@ -47,12 +46,14 @@ export const AboutImages = styled.section`
     justify-content: center;
     align-items: center;
     grid-row: 2;
+    margin: 0;
   }
   ${breakpoint.deviceMax768} {
     grid-column: 1 / -1;
     justify-content: center;
     align-items: center;
     grid-row: 2;
+    margin: 0;
   }
 `;
 

@@ -41,7 +41,7 @@ const AboutUs = () => {
       </AboutImages>
       <AboutInfo>
         <AboutHeader>
-          <AboutHeading>¿Quienes somos?</AboutHeading>
+          <AboutHeading>¿Quiénes somos?</AboutHeading>
           <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nemo

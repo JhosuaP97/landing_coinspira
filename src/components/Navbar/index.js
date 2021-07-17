@@ -1,12 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Nav, NavItem, NavLink, Logo, NavMenu, MobileButton } from "./styles";
 import { Menu } from "Icons/Menu";
 import { Cancel } from "Icons/Cancel";
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const [width, setWidth] = useState(window.innerWidth);
+
+  function handleWindowSizeChange() {
+    setWidth(window.innerWidth);
+  }
+  useEffect(() => {
+    window.addEventListener("resize", handleWindowSizeChange);
+    return () => {
+      window.removeEventListener("resize", handleWindowSizeChange);
+    };
+  }, []);
+
+  let isMobile = width <= 992;
 
   const handleMenu = () => {
-    setShowMenu(!showMenu);
+    isMobile && setShowMenu(!showMenu);
   };
   return (
     <>
