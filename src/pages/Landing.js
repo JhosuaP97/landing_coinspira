@@ -5,6 +5,7 @@ import Navbar from "components/Navbar";
 import Hero from "components/Hero";
 import AboutUs from "components/AboutUs";
 import Bootcamps from "components/Bootcamps";
+import Financing from "components/Financing";
 
 const Landing = () => {
   return (
@@ -14,6 +15,7 @@ const Landing = () => {
         <Hero />
         <AboutUs />
         <Bootcamps />
+        <Financing />
       </LandingContainer>
     </BrowserRouter>
   );
