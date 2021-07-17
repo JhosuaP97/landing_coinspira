@@ -2,10 +2,10 @@ import styled from "styled-components";
 import { breakpoint, Colors } from "styles/GlobalStyles";
 
 export const FinancingWrapper = styled.div`
+  background-color: #fff;
   display: flex;
   justify-content: space-around;
   padding: 5rem 0 0 0;
-  background-color: ${Colors.white};
   ${breakpoint.deviceMax992} {
     flex-direction: column-reverse;
     align-items: center;
