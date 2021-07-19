@@ -6,6 +6,7 @@ import Hero from "components/Hero";
 import AboutUs from "components/AboutUs";
 import Bootcamps from "components/Bootcamps";
 import Financing from "components/Financing";
+import Stories from "components/Stories";
 
 const Landing = () => {
   return (
@@ -15,6 +16,7 @@ const Landing = () => {
         <Hero />
         <AboutUs />
         <Bootcamps />
+        <Stories />
         <Financing />
       </LandingContainer>
     </BrowserRouter>
