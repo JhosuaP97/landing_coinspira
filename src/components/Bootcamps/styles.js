@@ -7,6 +7,9 @@ export const BootcampsWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-direction: column;
+  gap: 2rem;
+
   ${breakpoint.deviceMin768Max992} {
     gap: 2rem;
     flex-direction: column;

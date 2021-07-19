@@ -16,7 +16,7 @@ const Stories = () => {
         setImages((imgArray) => [...imgArray, urlImage]);
       }
     };
-    getImages(10);
+    getImages(6);
   }, []);
 
   return (
