@@ -4,6 +4,7 @@ import { LandingContainer } from "./styles";
 import Navbar from "components/Navbar";
 import Hero from "components/Hero";
 import AboutUs from "components/AboutUs";
+import Stories from "components/Stories";
 
 const Landing = () => {
   return (
@@ -12,6 +13,7 @@ const Landing = () => {
         <Navbar />
         <Hero />
         <AboutUs />
+        <Stories />
       </LandingContainer>
     </BrowserRouter>
   );
