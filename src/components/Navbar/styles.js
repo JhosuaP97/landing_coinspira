@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { NavLink as Link } from "react-router-dom";
-import { Colors } from "styles/GlobalStyles";
+import { Colors, breakpoint } from "styles/GlobalStyles";
 
 export const Nav = styled.nav`
   background: ${Colors.gray};
@@ -9,13 +9,13 @@ export const Nav = styled.nav`
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  font-family: Oxygen;
+  font-family: oswald;
   position: relative;
 `;
 
 export const Logo = styled.div`
   margin-left: 10px;
-  font-family: OpenSans;
+  font-family: oswald;
   font-weight: 400;
   font-size: 24px;
   text-transform: uppercase;
@@ -26,7 +26,8 @@ export const NavMenu = styled.ul`
   align-items: center;
   justify-content: center;
   transition: transform 0.3s ease-in-out;
-  @media screen and (max-width: 992px) {
+
+  ${breakpoint.deviceMax992} {
     position: absolute;
     width: 100%;
     height: 98vh;
@@ -34,22 +35,27 @@ export const NavMenu = styled.ul`
     left: ${({ showMenu }) => (showMenu ? 0 : "-120%")};
     flex-direction: column;
     transition: 0.3s all ease-in;
-    background-color: ${Colors.white};
+    background-color: ${Colors.gray};
     z-index: 20;
   }
 `;
 
+export const NavItem = styled.li`
+  padding: 1rem 2rem;
+`;
+
 export const NavLink = styled(Link)`
   text-decoration: none;
-  padding: 1rem 2rem;
   color: ${Colors.lightGray};
   cursor: pointer;
   text-transform: uppercase;
-  font-family: OpenSans;
+  outline: none;
+  font-family: Oswald, sans-serif;
   &.active {
     color: ${Colors.black};
   }
-  @media screen and (max-width: 992px) {
+
+  ${breakpoint.deviceMax992} {
     padding: 25px;
   }
 `;
@@ -74,7 +80,7 @@ export const HamburgerIcon = styled.span`
   &::after {
     transform: translateY(8px);
   }
-  @media screen and (max-width: 992px) {
+  ${breakpoint.deviceMax992} {
     display: block;
     position: absolute;
     top: 0;
@@ -88,7 +94,7 @@ export const MobileButton = styled.button`
   background: none;
   border: none;
   z-index: 20;
-  @media screen and (max-width: 992px) {
+  ${breakpoint.deviceMax992} {
     display: block;
     margin-right: 30px;
     transition: all 0.3s;

@@ -8,6 +8,13 @@ export const fonts = {
   base: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif",
 };
 
+export const breakpoint = {
+  deviceMin768Max992:
+    "@media screen and (min-width:768px) and (max-width: 992px)",
+  deviceMax768: "@media screen and (max-width: 768px)",
+  deviceMax992: "@media screen and (max-width: 992px)",
+};
+
 export const Colors = {
   white: "#eff5f8",
   gray: "#b2c7cf",
@@ -51,12 +58,22 @@ html {
     margin: 0;
     padding: 0;
   }
+
+  h1,p{
+    font-family:OpenSans;
+  }
+
+  h3{
+    font-family: Oswald;
+  }
+
   ul {
     list-style: none;
   }
   body {
     width: 100%;
     font-family:${fonts.base};
+    background-color: ${Colors.lightGray};
     
   }
   #root{
