@@ -59,7 +59,7 @@ html {
     padding: 0;
   }
 
-  h1,p{
+  h1, h2, p{
     font-family:OpenSans;
   }
 
